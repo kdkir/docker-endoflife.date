@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  PLATFORMS: linux/arm64
+  PLATFORMS: linux/amd64
   SOURCE_REPOSITORY: endoflife-date/endoflife.date
   DOCKERHUB_REPOSITORY: helllord/endoflife.date
 
