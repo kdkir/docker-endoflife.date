@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 env:
-  PLATFORMS: linux/amd64
+  PLATFORMS: linux/arm64
   SOURCE_REPOSITORY: endoflife-date/endoflife.date
-  DOCKERHUB_REPOSITORY: helllord/endoflife.date
+  DOCKERHUB_REPOSITORY: kekirwin/test
 
 jobs:
   get-tag:
@@ -19,7 +19,7 @@ jobs:
       - name: Fetch get_tag.py
         uses: actions/checkout@v4
         with:
-          repository: hellbot77/get-tag
+          repository: kdkir/get-tag
           sparse-checkout: get_tag.py
           sparse-checkout-cone-mode: false
       - name: Get Docker image tag
